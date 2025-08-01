@@ -39,12 +39,13 @@ button:hover {
 
 
 #calendar-container {
-    max-width: 900px;
+    max-width: 1000px;
+    min-width: 320px;
     margin: 0 auto;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 20px;
+    padding: 0px 5px ;
 }
 
 .calendar-header {
@@ -65,7 +66,7 @@ button:hover {
     border: 1px solid #ddd;
     border-radius: 4px;
     background-color: #f9f9f9;
-    min-width:10px;
+    min-width:7px;
 }
 
 .weekday {
