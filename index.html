@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>バイト予定追加アプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>バイト予定追加アプリ 🗓️</h1>
+    <p>日付をクリックすると、その日に「バイト (09:00-20:00)」の予定を追加します。</p>
+
+    <div id="auth-container" class="controls">
+        </div>
+
+    <div id="calendar-container" style="display: none;">
+        <div class="calendar-header">
+            <button id="prev-month">&lt;</button>
+            <h2 id="calendar-title"></h2>
+            <button id="next-month">&gt;</button>
+        </div>
+        <div id="calendar"></div>
+    </div>
+
+    <p id="status"></p>
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://apis.google.com/js/api.js" async defer></script>
+    <script src="script.js" async defer></script>
+
+</body>
+</html>

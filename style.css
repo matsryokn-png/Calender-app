@@ -1,0 +1,93 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+h1 {
+    color: #5a67d8;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+button:hover {
+    background-color: #434190;
+}
+
+#signout_button {
+    background-color: #e53e3e;
+}
+
+#signout_button:hover {
+    background-color: #c53030;
+}
+
+
+#calendar-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.day, .weekday {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.weekday {
+    font-weight: bold;
+    background-color: #eef2ff;
+}
+
+.day {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.day:hover {
+    background-color: #c3dafe;
+}
+
+.day.empty {
+    background-color: #fff;
+    cursor: default;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #2c5282;
+}
